@@ -4,12 +4,14 @@ body{
 }
 
 img.-circle{
+    min-width:128px;
     width:128px;
     height:128px;
     border-radius: 64px;    
 }
 
 img.-circle-sm{
+    min-width:64px;
     width: 64px;
     height: 64px;
     border-radius: 32px;  
