@@ -3,44 +3,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <style>
-            .main-screen{
-                width:100%;
-                height:100vh;
-                display:flex;
-                flex-direction: row;
-            }
-
-            .hero-title{
-                font-size:65px;
-                font-weight:500px;
-
-            }
-            .main-screen .-content{
-                padding:120px 75px;
-                flex-grow: 1;
-            }
-
-
-            .main-screen .-content,
-            .main-screen .-right-image-container img{
-                height:100%;
-            }
-            
-        </style>
     </head>
-    <body>
+    <body class="fade-in-right">
        <section class="main-screen">
            <div class="-content">
                <span class="hero-title">
                    Hi!
                    <div>I'm JR</div>
                </span>
-               <p>An aspiring Web Developer.</p>
-           </div>
+               <div>
+                    <a target="_blank" href="https://facebook.com/iamjenirose">
+                        <img src="assets/img/svg/facebook.svg" alt="Facebook Profile Link">
+                    </a>
+                    
+                    <a target="_blank" href="https://www.linkedin.com/in/iamjenirose/">
+                        <img src="assets/img/svg/linkedin.svg" alt="LinkedIn Profile Link">
+                    </a>
+                    
+                    <a target="_blank" href="https://github.com/iamjenirose">
+                        <img src="assets/img/svg/github.svg" alt="Github Link">
+                    </a>
+               </div>
+            
+                    <p>An aspiring Front-end Web Developer.</p>
+               
+                    <div class="call-to-action-container">
+                        <a class="call-to-action" href="assets/others/resume.pdf">
+                        Download My CV
+                        </a>
+                    </div>
+                </div>
            <div class="-right-image-container">
                <img src="assets/img/portrait.jpg" alt="JR Manuel's Image">
            </div>
        </section>
+
+       <section class="recommendations-screen">
+          
+        <h1>Testimonials About Me</h1>
+
+           <div class="grid-container">
+                <div class="row">
+                    <div class="col">
+                            <article class="recommendation">
+                                    <img class="-circle" src="https://randomuser.me/api/portraits/women/91.jpg" alt="Profile Image">
+                                    <div class ="-body shadowed white-box">
+                                        <span class="-name">Tin Chua</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat minima quos ipsa quo aliquam eaque omnis! Ipsam ullam placeat culpa, quod tempore possimus numquam, inventore dignissimos ipsa qui dolores?</p>
+                                    </div>
+                                </article>  
+                                </div>
+                                <div class="col">
+                                        <article class="recommendation">
+                                                <img class="-circle" src="https://randomuser.me/api/portraits/women/92.jpg" alt="Profile Image">
+                                                <div class ="-body shadowed white-box">
+                                                    <span class="-name">Beaut Santua</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, eius quisquam ut vel ratione maiores maxime magnam praesentium doloremque fugit impedit quis omnis asperiores! Ipsum deleniti commodi veniam cum repudiandae?</p>
+                                                </div>
+                                        </article> 
+                                    </div>
+                                <div class="col">
+                                        <article class="recommendation">
+                                                        <img class="-circle" src="https://randomuser.me/api/portraits/women/93.jpg" alt="Profile Image">
+                                                        <div class ="-body shadowed white-box">
+                                                            <span class="-name">Eyxa Cristobal</span>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae nam dolorem laudantium soluta exercitationem inventore temporibus iure? Natus recusandae quaerat aut molestiae nesciunt eum in animi rem illum obcaecati?</p>
+                                                        </div>
+                                        </article>  
+                                    </div>
+                                </div>
+                            </div>
+                        
+                             </section>
+                 <section class="employment-history">
+                     <h1>MyEmployment History</h1>
+                        <article class="employment-history-item">
+                                <img class="-circle-sm" src="data:image/jpeg;base64,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" alt="Company Logo" >
+                                    <div class="-body shadowed">
+                                        <h4>CNX Philippines</h4>
+                                        <span class="sub-heading">September 2014 - Present</span>
+                                        <strong>Role : Team Leader Trainee</strong>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse magni, neque voluptates molestias doloribus, sunt nesciunt error natus placeat, nihil aspernatur necessitatibus! Laborum odio earum beatae, voluptatibus exercitationem adipisci eveniet?</p>
+                                    </div>
+                            
+                            </article>
+                            
+                            <article class="employment-history-item">
+                                    <img class="-circle-sm"src="assets/img/company logo.png" alt="Company Logo">
+                                        <div class="-body shadowed">
+                                                <h4>Concentrix Philippines</h4>
+                                                <span class="sub-heading">September 2014 - Present</span>
+                                                <strong>Role : Team Leader Trainee</strong>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus laborum cupiditate unde, ipsam optio at expedita veniam, consectetur aliquid repudiandae odio debitis a ut, earum assumenda quae iusto tempore?</p>
+                                        </div>
+                                
+                                </article>
+
+                 </section>
     </body>
 </html>

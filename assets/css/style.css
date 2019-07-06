@@ -21,3 +21,188 @@ img.-circle-sm{
 .shadowed{
    box-shadow: 0px 0px 24px -8px black;
 }
+h1{
+    margin-bottom:38px;
+
+}
+
+/* Main Screen Styles  */
+.main-screen{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+}
+
+.hero-title{
+    font-size:65px;
+    font-weight:500px;
+
+}
+.main-screen .-content{
+    padding:120px 75px;
+    flex-grow: 1;
+}
+
+.main-screen .-content,
+.main-screen .-right-image-container img{
+    height:100%;
+}
+
+@media (max-width:600px){
+    .main-screen .-right-image-container{
+        display:none;
+    }
+
+    .hero-title{
+        font-weight:400px;
+        font-size:45px; 
+    }
+}
+
+
+/* End of Main Screen Styles */
+
+/* Call to action styles */
+
+.call-to-action .container{
+    margin-top:28px;
+}
+
+.call-to-action{
+    padding: 12px 18px;
+    background-color: #090a0a;
+    font-size: 24px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* End of call to action styles */
+
+/* Recommendation Screen Styles */
+.box{
+    background-color:rgb(242, 247, 247);
+    width:100%;
+    min-height:100px;
+    margin:2px;
+}
+
+.grid-container{
+    max-width:1440px;
+    margin: 0 auto;
+
+}
+
+.grid-container .row{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.grid-container .row .col{
+    flex-basis: 33.33%;
+    padding:10px;
+    box-sizing: border-box;
+    width:259px;
+}
+
+@media (max-width:1440px){
+    .grid-container .row .col{
+    flex-basis: 33.33%;
+    }
+}
+
+@media (max-width:599px){
+    .grid-container .row .col{
+    flex-basis: 100%;
+    }
+}
+
+/* End of Recommendation Screen Styles */
+
+/* Testimonial Styles */
+.recommendation{
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation > * {
+    margin:auto;
+}
+
+
+.recommendation span.-name{
+    font-weight: bold;
+    color:rgb(16, 43, 43);
+}
+
+.recommendation .-body{
+    padding: 24px;
+    padding-top: 88px;
+    margin-top: -64px;
+}
+
+.recommendation img.-circle{
+    z-index: 100;
+}
+/* End of Testimonial Styles */
+
+/* Employment history Styles*/
+
+body{
+    background-color: white;
+}
+
+
+.employment-history-item{
+display:flex;
+margin-bottom: 20px;
+}
+
+
+
+.employment-history-item .-body{
+margin-left: 20px;
+padding: 10px 15px;
+max-width: 500px;
+margin:0px;
+
+}
+
+.sub-heading{
+font-weight: bold;
+color: teal;
+display:block;
+}
+
+@media all and (max-width:479px){
+.employment-history-item img.-circle-sm{
+   margin: 0px 20px 20px 20px;
+}
+}
+
+.employment-history-item img.-circle-sm{
+    display:none;
+    
+}
+
+/* End of Employment History Styles */
+
+.fade-in-right{
+    animation-duration:3s;
+    animation-name:fadeinright;
+}
+
+@keyframes fadeinright {
+    0%{
+        opacity: 0;
+        transform:translateX(40px, -40px);
+       
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px, 0px);
+    }
+}
+
