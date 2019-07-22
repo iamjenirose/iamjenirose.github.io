@@ -1,11 +1,11 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color : #09464b;
+    color : #033838;
     background-color: white;
     
-    /* //background-image: url();
-    /* //background-repeat: repeat; */
-
+   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1N34AdlkKaBddUow7e97CEZzaH_KMoaAA38U7kDkUgFI1DcC); */
+   /* background-attachment: fixed; */
+   
 }
 
 p.segoeui{
@@ -30,12 +30,15 @@ img.-circle-sm{
 .shadowed{
    box-shadow: 0px 0px 24px -8px black;
 }
-h1{
-    margin-bottom:50px;
-    margin-left: 40px;
-    margin-top: 50px;
+
+h2{
+    margin-bottom:80px;
+    margin-left: 35px;
+    margin-top: 80px;
     
 }
+
+
 
 /* Main Screen Styles  */
 .main-screen{
@@ -46,8 +49,9 @@ h1{
 }
 
 .hero-title{
-    font-size:50px;
+    font-size:5vw;
     font-weight:400px;
+
 
 }
 .main-screen .-content{
@@ -82,11 +86,12 @@ h1{
 }
 
 .call-to-action{
-    padding: 12px 12px;
-    background-color: #2c211f;
+  padding: 12px 12px;
+  background-color: #2c211f;
     font-size: 18px;
     text-decoration: none;
     color: whitesmoke;
+    border-radius:8px;
 }
 
 /* End of call to action styles */
